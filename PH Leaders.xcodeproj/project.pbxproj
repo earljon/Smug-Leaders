@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0DA86813377C6600C898A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0DA86713377C6600C898A0 /* UIKit.framework */; };
+		0A0DA86A13377C6600C898A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0DA86913377C6600C898A0 /* Foundation.framework */; };
+		0A0DA86C13377C6600C898A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0DA86B13377C6600C898A0 /* CoreGraphics.framework */; };
+		0A0DA87213377C6600C898A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA87013377C6600C898A0 /* InfoPlist.strings */; };
+		0A0DA87513377C6600C898A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA87413377C6600C898A0 /* main.m */; };
+		0A0DA87813377C6600C898A0 /* PH_LeadersAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA87713377C6600C898A0 /* PH_LeadersAppDelegate.m */; };
+		0A0DA87B13377C6600C898A0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA87913377C6600C898A0 /* MainWindow.xib */; };
+		0A0DA87E13377C6600C898A0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA87D13377C6600C898A0 /* RootViewController.m */; };
+		0A0DA88113377C6600C898A0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA87F13377C6600C898A0 /* RootViewController.xib */; };
+		0A0DA8D31337899200C898A0 /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA8CB1337899200C898A0 /* EGODatabase.m */; };
+		0A0DA8D41337899200C898A0 /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA8CD1337899200C898A0 /* EGODatabaseRequest.m */; };
+		0A0DA8D51337899200C898A0 /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA8CF1337899200C898A0 /* EGODatabaseResult.m */; };
+		0A0DA8D61337899200C898A0 /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA8D11337899200C898A0 /* EGODatabaseRow.m */; };
+		0A0DA8D71337899200C898A0 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8D21337899200C898A0 /* README.markdown */; };
+		0A0DA8D913378AE400C898A0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0DA8D813378AE400C898A0 /* libsqlite3.0.dylib */; };
+		0A0DA8EA13378B8C00C898A0 /* 100px-Aguinaldo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8DB13378B8C00C898A0 /* 100px-Aguinaldo.jpg */; };
+		0A0DA8EB13378B8C00C898A0 /* 100px-Carlos_P_Garcia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8DC13378B8C00C898A0 /* 100px-Carlos_P_Garcia.jpg */; };
+		0A0DA8EC13378B8C00C898A0 /* 100px-Corazon_Aquino_1986.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8DD13378B8C00C898A0 /* 100px-Corazon_Aquino_1986.jpg */; };
+		0A0DA8ED13378B8C00C898A0 /* 100px-Diosdado_Macapagal_USS_Oklahoma_City_1962_cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8DE13378B8C00C898A0 /* 100px-Diosdado_Macapagal_USS_Oklahoma_City_1962_cropped.jpg */; };
+		0A0DA8EE13378B8C00C898A0 /* 100px-Gloria_Macapagal_Arroyo_WEF_2009-crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8DF13378B8C00C898A0 /* 100px-Gloria_Macapagal_Arroyo_WEF_2009-crop.jpg */; };
+		0A0DA8EF13378B8C00C898A0 /* 100px-Jose_P._Laurel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E013378B8C00C898A0 /* 100px-Jose_P._Laurel.jpg */; };
+		0A0DA8F013378B8C00C898A0 /* 100px-Josephestradapentagon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E113378B8C00C898A0 /* 100px-Josephestradapentagon.jpg */; };
+		0A0DA8F113378B8C00C898A0 /* 100px-MagsaysayRamon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E213378B8C00C898A0 /* 100px-MagsaysayRamon.jpg */; };
+		0A0DA8F213378B8C00C898A0 /* 100px-Marcos_with_Bosworths.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E313378B8C00C898A0 /* 100px-Marcos_with_Bosworths.jpg */; };
+		0A0DA8F313378B8C00C898A0 /* 100px-Noynoy_Aquino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E413378B8C00C898A0 /* 100px-Noynoy_Aquino.jpg */; };
+		0A0DA8F413378B8C00C898A0 /* 100px-President_Manuel_A_Roxas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E513378B8C00C898A0 /* 100px-President_Manuel_A_Roxas.jpg */; };
+		0A0DA8F513378B8C00C898A0 /* 100px-Presidentelpidioquirino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E613378B8C00C898A0 /* 100px-Presidentelpidioquirino.jpg */; };
+		0A0DA8F613378B8C00C898A0 /* 100px-QuezonUS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E713378B8C00C898A0 /* 100px-QuezonUS.jpg */; };
+		0A0DA8F713378B8C00C898A0 /* 100px-Ramos_Pentagon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E813378B8C00C898A0 /* 100px-Ramos_Pentagon.jpg */; };
+		0A0DA8F813378B8C00C898A0 /* 100px-VP_Osmeña_in_Washington_cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA8E913378B8C00C898A0 /* 100px-VP_Osmeña_in_Washington_cropped.jpg */; };
+		0A0DA960133790E500C898A0 /* ph_leaders.db in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA95F133790E400C898A0 /* ph_leaders.db */; };
+		0A0DA96313379DE700C898A0 /* President.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA96213379DE400C898A0 /* President.m */; };
+		0A0DA97F1337A73900C898A0 /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DA97D1337A72E00C898A0 /* WikiViewController.m */; };
+		0A0DA9801337A73900C898A0 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA97E1337A73200C898A0 /* WikiViewController.xib */; };
+		0A0DA9821337AE0000C898A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA9811337ADFE00C898A0 /* Default.png */; };
+		0A0DA9841337AF5600C898A0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA9831337AF5400C898A0 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0DA86313377C6600C898A0 /* PH Leaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PH Leaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0DA86713377C6600C898A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0A0DA86913377C6600C898A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A0DA86B13377C6600C898A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A0DA86F13377C6600C898A0 /* PH Leaders-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PH Leaders-Info.plist"; sourceTree = "<group>"; };
+		0A0DA87113377C6600C898A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A0DA87313377C6600C898A0 /* PH Leaders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PH Leaders-Prefix.pch"; sourceTree = "<group>"; };
+		0A0DA87413377C6600C898A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A0DA87613377C6600C898A0 /* PH_LeadersAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PH_LeadersAppDelegate.h; sourceTree = "<group>"; };
+		0A0DA87713377C6600C898A0 /* PH_LeadersAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PH_LeadersAppDelegate.m; sourceTree = "<group>"; };
+		0A0DA87A13377C6600C898A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0A0DA87C13377C6600C898A0 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0A0DA87D13377C6600C898A0 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0A0DA88013377C6600C898A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		0A0DA8CA1337899200C898A0 /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		0A0DA8CB1337899200C898A0 /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		0A0DA8CC1337899200C898A0 /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		0A0DA8CD1337899200C898A0 /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		0A0DA8CE1337899200C898A0 /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		0A0DA8CF1337899200C898A0 /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		0A0DA8D01337899200C898A0 /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		0A0DA8D11337899200C898A0 /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		0A0DA8D21337899200C898A0 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		0A0DA8D813378AE400C898A0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		0A0DA8DB13378B8C00C898A0 /* 100px-Aguinaldo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Aguinaldo.jpg"; sourceTree = "<group>"; };
+		0A0DA8DC13378B8C00C898A0 /* 100px-Carlos_P_Garcia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Carlos_P_Garcia.jpg"; sourceTree = "<group>"; };
+		0A0DA8DD13378B8C00C898A0 /* 100px-Corazon_Aquino_1986.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Corazon_Aquino_1986.jpg"; sourceTree = "<group>"; };
+		0A0DA8DE13378B8C00C898A0 /* 100px-Diosdado_Macapagal_USS_Oklahoma_City_1962_cropped.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Diosdado_Macapagal_USS_Oklahoma_City_1962_cropped.jpg"; sourceTree = "<group>"; };
+		0A0DA8DF13378B8C00C898A0 /* 100px-Gloria_Macapagal_Arroyo_WEF_2009-crop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Gloria_Macapagal_Arroyo_WEF_2009-crop.jpg"; sourceTree = "<group>"; };
+		0A0DA8E013378B8C00C898A0 /* 100px-Jose_P._Laurel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Jose_P._Laurel.jpg"; sourceTree = "<group>"; };
+		0A0DA8E113378B8C00C898A0 /* 100px-Josephestradapentagon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Josephestradapentagon.jpg"; sourceTree = "<group>"; };
+		0A0DA8E213378B8C00C898A0 /* 100px-MagsaysayRamon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-MagsaysayRamon.jpg"; sourceTree = "<group>"; };
+		0A0DA8E313378B8C00C898A0 /* 100px-Marcos_with_Bosworths.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Marcos_with_Bosworths.jpg"; sourceTree = "<group>"; };
+		0A0DA8E413378B8C00C898A0 /* 100px-Noynoy_Aquino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Noynoy_Aquino.jpg"; sourceTree = "<group>"; };
+		0A0DA8E513378B8C00C898A0 /* 100px-President_Manuel_A_Roxas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-President_Manuel_A_Roxas.jpg"; sourceTree = "<group>"; };
+		0A0DA8E613378B8C00C898A0 /* 100px-Presidentelpidioquirino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Presidentelpidioquirino.jpg"; sourceTree = "<group>"; };
+		0A0DA8E713378B8C00C898A0 /* 100px-QuezonUS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-QuezonUS.jpg"; sourceTree = "<group>"; };
+		0A0DA8E813378B8C00C898A0 /* 100px-Ramos_Pentagon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Ramos_Pentagon.jpg"; sourceTree = "<group>"; };
+		0A0DA8E913378B8C00C898A0 /* 100px-VP_Osmeña_in_Washington_cropped.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-VP_Osmeña_in_Washington_cropped.jpg"; sourceTree = "<group>"; };
+		0A0DA95F133790E400C898A0 /* ph_leaders.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ph_leaders.db; sourceTree = "<group>"; };
+		0A0DA96113379DE200C898A0 /* President.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = President.h; sourceTree = "<group>"; };
+		0A0DA96213379DE400C898A0 /* President.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = President.m; sourceTree = "<group>"; };
+		0A0DA97C1337A72B00C898A0 /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
+		0A0DA97D1337A72E00C898A0 /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
+		0A0DA97E1337A73200C898A0 /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		0A0DA9811337ADFE00C898A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0A0DA9831337AF5400C898A0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0DA86013377C6500C898A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0DA8D913378AE400C898A0 /* libsqlite3.0.dylib in Frameworks */,
+				0A0DA86813377C6600C898A0 /* UIKit.framework in Frameworks */,
+				0A0DA86A13377C6600C898A0 /* Foundation.framework in Frameworks */,
+				0A0DA86C13377C6600C898A0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0DA85813377C6500C898A0 = {
+			isa = PBXGroup;
+			children = (
+				0A0DA86D13377C6600C898A0 /* PH Leaders */,
+				0A0DA86613377C6600C898A0 /* Frameworks */,
+				0A0DA86413377C6600C898A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0DA86413377C6600C898A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA86313377C6600C898A0 /* PH Leaders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A0DA86613377C6600C898A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA8D813378AE400C898A0 /* libsqlite3.0.dylib */,
+				0A0DA86713377C6600C898A0 /* UIKit.framework */,
+				0A0DA86913377C6600C898A0 /* Foundation.framework */,
+				0A0DA86B13377C6600C898A0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A0DA86D13377C6600C898A0 /* PH Leaders */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA87613377C6600C898A0 /* PH_LeadersAppDelegate.h */,
+				0A0DA87713377C6600C898A0 /* PH_LeadersAppDelegate.m */,
+				0A0DA87913377C6600C898A0 /* MainWindow.xib */,
+				0A0DA87C13377C6600C898A0 /* RootViewController.h */,
+				0A0DA87D13377C6600C898A0 /* RootViewController.m */,
+				0A0DA87F13377C6600C898A0 /* RootViewController.xib */,
+				0A0DA86E13377C6600C898A0 /* Supporting Files */,
+				0A0DA96113379DE200C898A0 /* President.h */,
+				0A0DA96213379DE400C898A0 /* President.m */,
+				0A0DA97C1337A72B00C898A0 /* WikiViewController.h */,
+				0A0DA97D1337A72E00C898A0 /* WikiViewController.m */,
+				0A0DA97E1337A73200C898A0 /* WikiViewController.xib */,
+			);
+			path = "PH Leaders";
+			sourceTree = "<group>";
+		};
+		0A0DA86E13377C6600C898A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA9831337AF5400C898A0 /* Icon.png */,
+				0A0DA9811337ADFE00C898A0 /* Default.png */,
+				0A0DA95F133790E400C898A0 /* ph_leaders.db */,
+				0A0DA8DA13378B8C00C898A0 /* images */,
+				0A0DA88713377C9600C898A0 /* Components */,
+				0A0DA86F13377C6600C898A0 /* PH Leaders-Info.plist */,
+				0A0DA87013377C6600C898A0 /* InfoPlist.strings */,
+				0A0DA87313377C6600C898A0 /* PH Leaders-Prefix.pch */,
+				0A0DA87413377C6600C898A0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A0DA88713377C9600C898A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA8C91337899200C898A0 /* DBHelper */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		0A0DA8C91337899200C898A0 /* DBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA8CA1337899200C898A0 /* EGODatabase.h */,
+				0A0DA8CB1337899200C898A0 /* EGODatabase.m */,
+				0A0DA8CC1337899200C898A0 /* EGODatabaseRequest.h */,
+				0A0DA8CD1337899200C898A0 /* EGODatabaseRequest.m */,
+				0A0DA8CE1337899200C898A0 /* EGODatabaseResult.h */,
+				0A0DA8CF1337899200C898A0 /* EGODatabaseResult.m */,
+				0A0DA8D01337899200C898A0 /* EGODatabaseRow.h */,
+				0A0DA8D11337899200C898A0 /* EGODatabaseRow.m */,
+				0A0DA8D21337899200C898A0 /* README.markdown */,
+			);
+			name = DBHelper;
+			path = Components/DBHelper;
+			sourceTree = "<group>";
+		};
+		0A0DA8DA13378B8C00C898A0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA8DB13378B8C00C898A0 /* 100px-Aguinaldo.jpg */,
+				0A0DA8DC13378B8C00C898A0 /* 100px-Carlos_P_Garcia.jpg */,
+				0A0DA8DD13378B8C00C898A0 /* 100px-Corazon_Aquino_1986.jpg */,
+				0A0DA8DE13378B8C00C898A0 /* 100px-Diosdado_Macapagal_USS_Oklahoma_City_1962_cropped.jpg */,
+				0A0DA8DF13378B8C00C898A0 /* 100px-Gloria_Macapagal_Arroyo_WEF_2009-crop.jpg */,
+				0A0DA8E013378B8C00C898A0 /* 100px-Jose_P._Laurel.jpg */,
+				0A0DA8E113378B8C00C898A0 /* 100px-Josephestradapentagon.jpg */,
+				0A0DA8E213378B8C00C898A0 /* 100px-MagsaysayRamon.jpg */,
+				0A0DA8E313378B8C00C898A0 /* 100px-Marcos_with_Bosworths.jpg */,
+				0A0DA8E413378B8C00C898A0 /* 100px-Noynoy_Aquino.jpg */,
+				0A0DA8E513378B8C00C898A0 /* 100px-President_Manuel_A_Roxas.jpg */,
+				0A0DA8E613378B8C00C898A0 /* 100px-Presidentelpidioquirino.jpg */,
+				0A0DA8E713378B8C00C898A0 /* 100px-QuezonUS.jpg */,
+				0A0DA8E813378B8C00C898A0 /* 100px-Ramos_Pentagon.jpg */,
+				0A0DA8E913378B8C00C898A0 /* 100px-VP_Osmeña_in_Washington_cropped.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0DA86213377C6500C898A0 /* PH Leaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0DA88413377C6600C898A0 /* Build configuration list for PBXNativeTarget "PH Leaders" */;
+			buildPhases = (
+				0A0DA85F13377C6500C898A0 /* Sources */,
+				0A0DA86013377C6500C898A0 /* Frameworks */,
+				0A0DA86113377C6500C898A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PH Leaders";
+			productName = "PH Leaders";
+			productReference = 0A0DA86313377C6600C898A0 /* PH Leaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0DA85A13377C6500C898A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Smugappventures;
+			};
+			buildConfigurationList = 0A0DA85D13377C6500C898A0 /* Build configuration list for PBXProject "PH Leaders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A0DA85813377C6500C898A0;
+			productRefGroup = 0A0DA86413377C6600C898A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0DA86213377C6500C898A0 /* PH Leaders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0DA86113377C6500C898A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0DA87213377C6600C898A0 /* InfoPlist.strings in Resources */,
+				0A0DA87B13377C6600C898A0 /* MainWindow.xib in Resources */,
+				0A0DA88113377C6600C898A0 /* RootViewController.xib in Resources */,
+				0A0DA8D71337899200C898A0 /* README.markdown in Resources */,
+				0A0DA8EA13378B8C00C898A0 /* 100px-Aguinaldo.jpg in Resources */,
+				0A0DA8EB13378B8C00C898A0 /* 100px-Carlos_P_Garcia.jpg in Resources */,
+				0A0DA8EC13378B8C00C898A0 /* 100px-Corazon_Aquino_1986.jpg in Resources */,
+				0A0DA8ED13378B8C00C898A0 /* 100px-Diosdado_Macapagal_USS_Oklahoma_City_1962_cropped.jpg in Resources */,
+				0A0DA8EE13378B8C00C898A0 /* 100px-Gloria_Macapagal_Arroyo_WEF_2009-crop.jpg in Resources */,
+				0A0DA8EF13378B8C00C898A0 /* 100px-Jose_P._Laurel.jpg in Resources */,
+				0A0DA8F013378B8C00C898A0 /* 100px-Josephestradapentagon.jpg in Resources */,
+				0A0DA8F113378B8C00C898A0 /* 100px-MagsaysayRamon.jpg in Resources */,
+				0A0DA8F213378B8C00C898A0 /* 100px-Marcos_with_Bosworths.jpg in Resources */,
+				0A0DA8F313378B8C00C898A0 /* 100px-Noynoy_Aquino.jpg in Resources */,
+				0A0DA8F413378B8C00C898A0 /* 100px-President_Manuel_A_Roxas.jpg in Resources */,
+				0A0DA8F513378B8C00C898A0 /* 100px-Presidentelpidioquirino.jpg in Resources */,
+				0A0DA8F613378B8C00C898A0 /* 100px-QuezonUS.jpg in Resources */,
+				0A0DA8F713378B8C00C898A0 /* 100px-Ramos_Pentagon.jpg in Resources */,
+				0A0DA8F813378B8C00C898A0 /* 100px-VP_Osmeña_in_Washington_cropped.jpg in Resources */,
+				0A0DA960133790E500C898A0 /* ph_leaders.db in Resources */,
+				0A0DA9801337A73900C898A0 /* WikiViewController.xib in Resources */,
+				0A0DA9821337AE0000C898A0 /* Default.png in Resources */,
+				0A0DA9841337AF5600C898A0 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0DA85F13377C6500C898A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0DA87513377C6600C898A0 /* main.m in Sources */,
+				0A0DA87813377C6600C898A0 /* PH_LeadersAppDelegate.m in Sources */,
+				0A0DA87E13377C6600C898A0 /* RootViewController.m in Sources */,
+				0A0DA8D31337899200C898A0 /* EGODatabase.m in Sources */,
+				0A0DA8D41337899200C898A0 /* EGODatabaseRequest.m in Sources */,
+				0A0DA8D51337899200C898A0 /* EGODatabaseResult.m in Sources */,
+				0A0DA8D61337899200C898A0 /* EGODatabaseRow.m in Sources */,
+				0A0DA96313379DE700C898A0 /* President.m in Sources */,
+				0A0DA97F1337A73900C898A0 /* WikiViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A0DA87013377C6600C898A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0DA87113377C6600C898A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A0DA87913377C6600C898A0 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0DA87A13377C6600C898A0 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0A0DA87F13377C6600C898A0 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0DA88013377C6600C898A0 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A0DA88213377C6600C898A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A0DA88313377C6600C898A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0A0DA88513377C6600C898A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PH Leaders/PH Leaders-Prefix.pch";
+				INFOPLIST_FILE = "PH Leaders/PH Leaders-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A0DA88613377C6600C898A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PH Leaders/PH Leaders-Prefix.pch";
+				INFOPLIST_FILE = "PH Leaders/PH Leaders-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0DA85D13377C6500C898A0 /* Build configuration list for PBXProject "PH Leaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0DA88213377C6600C898A0 /* Debug */,
+				0A0DA88313377C6600C898A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0DA88413377C6600C898A0 /* Build configuration list for PBXNativeTarget "PH Leaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0DA88513377C6600C898A0 /* Debug */,
+				0A0DA88613377C6600C898A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A0DA85A13377C6500C898A0 /* Project object */;
+}
